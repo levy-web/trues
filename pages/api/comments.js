@@ -8,14 +8,13 @@
 import { GraphQLClient, gql } from "graphql-request";
 
 const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
-const blogTocken = process.env.GRAPHCMS_TOCKEN;
+
 
 export default async function comments(req, res){
   const {name,email, slug ,comment} = req.body;
-  const graphQLClient = new GraphQLClient(graphqlAPI, {
-    
+  const graphQLClient = new GraphQLClient(graphqlAPI, {  
     headers: {
-      authorization: `Bearer ${blogTocken}`,
+      authorization: `Bearer ${process.env.GRAPHCMS_TOCKEN}`,
     },
   });
   const query = gql`
