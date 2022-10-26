@@ -5,7 +5,7 @@ import Link from 'next/link';
 const PostCard = ({ post }) => {
 
   return (
-    <div className='bg-white shadow-lg rounded-lg p-200 lg:p-8 pb-12 mb-8'>
+    <div className='bg-white shadow-lg rounded-lg p-100 lg:p-8 pb-12 mb-8'>
 
         <div className='relative overflow-hidden shadow-md pb-80 mb-6'>
 
