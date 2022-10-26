@@ -8,32 +8,32 @@ export const getPosts = async () => {
       posts(
         orderBy: createdAt_ASC
       )
-      postsConnection {
-        edges {
-          cursor
-          node {
-            author {
-              bio
-              name
-              id
-              photo {
-                url
-              }
-            }
-            createdAt
-            slug
-            title
-            excerpt
-            featuredImage {
-              url
-            }
-            categories {
-              name
-              slug
-            }
-          }
-        }
-      }
+       postsConnection {
+         edges {
+           cursor
+           node {
+             author {
+               bio
+               name
+               id
+               photo {
+                 url
+               }
+             }
+             createdAt
+             slug
+             title
+             excerpt
+             featuredImage {
+               url
+             }
+             categories {
+               name
+               slug
+             }
+           }
+         }
+       }
     }
   `;
 
