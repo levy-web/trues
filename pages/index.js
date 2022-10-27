@@ -10,6 +10,8 @@ export default function Home ({posts})  {
       <Head>
         <title>trues</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name= "site-verification" content= "af01e14951caf7ca97d166e96353c628" ></meta>
+        
       </Head>
       <FeaturedPosts/>
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
