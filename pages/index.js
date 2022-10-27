@@ -11,6 +11,12 @@ export default function Home ({posts})  {
         <title>trues</title>
         <link rel="icon" href="/favicon.ico" />
         
+        <script 
+          type="text/javascript"
+          src="https://cdn.diclotrans.com/sdk/v1/4189/e740a3298f9156d68d059bd1048afbc4e8b74fa0/lib.js">
+
+        </script>
+        
       </Head>
       <FeaturedPosts/>
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
