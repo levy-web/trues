@@ -10,7 +10,6 @@ export default function Home ({posts})  {
       <Head>
         <title>trues</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name= "site-verification" content= "fb57db5d7d32717c9ebd8f38dda46864" ></meta>
         
       </Head>
       <FeaturedPosts/>
