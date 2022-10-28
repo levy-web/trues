@@ -11,11 +11,14 @@ export default function Home ({posts})  {
       <Head>
         <title>trues</title>
         <link rel="icon" href="/favicon.ico" />
+        .scripts{
         <>
         <script type="text/javascript" src="https://cdn.diclotrans.com/sdk/v1/4189/e740a3298f9156d68d059bd1048afbc4e8b74fa0/lib.js"></script>
         <script type="text/javascript" src="https://cdn.diclotrans.com/sdk/v1/4208/771547afc51f1af278ab679446c0c3e43c477093/lib.js"></script>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1048957289759461" crossorigin="anonymous"></script>
+        
         </>
+        }
 
       </Head>
       <FeaturedPosts/>
@@ -26,7 +29,7 @@ export default function Home ({posts})  {
         
         <div className='lg:col-span-4 col-span-1'>
           <div className='lg:sticky relative top-8'>
-            <PostWidget />
+            <PostWidget className='scripts'/>
             <Categories />
 
           </div>
