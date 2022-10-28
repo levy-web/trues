@@ -11,7 +11,7 @@ export default function Home ({posts})  {
       <Head>
         <title>trues</title>
         <link rel="icon" href="/favicon.ico" />
-        <Link rel='stylesheet' href=".addscript.js"></Link>
+        <Link rel='stylesheet' href="../adds/addscripts.js"></Link>
 
       </Head>
       <FeaturedPosts/>
