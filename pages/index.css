@@ -1,0 +1,114 @@
+.featured-image{
+    height: 100%;
+    width:100%;
+    position: absolute;
+
+}
+.footer{
+    height: 300px;
+    background-color: bisque;
+    text-align: center;
+}
+.featured-card-pic{
+  height: 130px;
+}
+
+.featured-card-p{
+  margin-top: 5px;
+  height: 60px;
+  
+}
+
+@media (min-width: 1441px) and (max-width: 1980px) {
+    /* Styles for screens with a maximum width of 768px */
+    .featured-image-div{
+        height: 200px;
+        width: 200px;
+        position: relative;
+    
+    }
+  }
+
+  @media (min-width: 1281px) and (max-width: 1440px) {
+    /* Styles for screens with a maximum width of 768px */
+    .featured-image-div{
+        height: 200px;
+        width: 200px;
+        position: relative;
+    
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    /* Styles for screens with a maximum width of 768px */
+    .featured-image-div{
+        height: 200px;
+        width: 200px;
+        position: relative;
+    
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Styles for screens with a maximum width of 768px */
+    .featured-image-div{
+        height: 300px;
+        width: 100%;
+        position: relative;
+    
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    /* Styles for screens with a maximum width of 768px */
+    .featured-image-div{
+        height: 300px;
+        width: 100%;
+        position: relative;
+    
+    }
+  }
+  
+  @media (min-width: 321px) and (max-width: 480px) {
+    /* Styles for screens with a maximum width of 480px */
+    .featured-image-div{
+        height: 300px;
+        width: 100%;
+        position: relative;
+    
+    }
+    .author-date {
+        display: none;
+    }
+    .featured-card-pic{
+      height: 200px;
+    }
+    
+    .featured-card-p{
+      margin-top: 5px;
+      height: 45px;
+      font-size: medium;
+    }
+  }
+
+  @media (max-width: 320px) {
+    /* Styles for screens with a maximum width of 768px */
+    .featured-image-div{
+        height: 300px;
+        width: 100%;
+        position: relative;
+    
+    }
+
+    .author-date {
+        display: none;
+    }
+    .featured-card-pic{
+      height: 200px;
+    }
+    
+    .featured-card-p{
+      margin-top: 5px;
+      height: 45px;
+    }
+  }

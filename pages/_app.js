@@ -1,4 +1,5 @@
 import 'tailwindcss/tailwind.css';
+import './index.css'
 import { Layout } from '../components';
 import { Analytics } from '@vercel/analytics/react';
 import '../styles/globals.scss';

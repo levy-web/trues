@@ -6,27 +6,25 @@ const PostCard = ({ post }) => {
 
   return (
     <div className='bg-white shadow-lg rounded-lg p-200 lg:p-8 pb-12 mb-8'>
-
-        <div className='relative overflow-hidden shadow-md pb-80 mb-6'>
+      <div className='grid grid-cols-1 lg:grid-cols-12 gap-2'>
+      <div className='lg:col-span-4 col-span-1'>
+        <div className='featured-image-div  shadow-md mb-2'>
 
             <img
                 src={post.featuredImage.url}
                 alt = {post.title}
-                className = "object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg: rounded-lg"
+                className = "object-top absolute w-full h-full rounded-t-lg lg: rounded-lg"
             
             />
 
         </div>
-        <h1 className='transition duration-700 text-center mb-8 cursor-pointer hover:text-pink-600 text-3xl font-semibold'>
-          <Link href={`/post/${post.slug}`}>
-            {post.title}
-          </Link>
-        </h1>
-        <div className='bloc lg:flex text-center items-center justify-center mb-8 w-full'>
+        </div>
+        <div className='lg:col-span-8 col-span-1'>
+        <div className='bloc author-date lg:flex justify-center text-center items-center mb-8 w-full'>
           <div className='flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8'>
             <img
-              height="30px"
-              width="30px"
+              height="20px"
+              width="20px"
               className = "align-middle rounded-full" 
               src= {post.author.photo.url}
               alt={post.author.name} 
@@ -44,15 +42,27 @@ const PostCard = ({ post }) => {
           </div>
 
         </div>
-        <p className='text-center text-lg text-gray-700 font-normal px-4 lg: px-20 mb-8'>{post.excerpt}</p>
+
+      
+        <h1 className='transition text-center duration-700 mb-4 cursor-pointer hover:text-pink-600 text-xlg font-semibold'>
+          <Link href={`/post/${post.slug}`}>
+            {post.title}
+          </Link>
+        </h1>
+        <p className='text-lg text-center text-gray-700 font-normal px-1 lg: px-2 mb-8'>{post.excerpt.substring(0, 99)}...</p>
+
         <div className='text-center'>
           <Link href={`/post/${post.slug}`}>
-            <span className='transition duration-500 tranform hover:-transtlate-y-1 inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer'>
+            <span className='transition duration-500 tranform hover:-transtlate-y-1 inline-block bg-pink-600 text-xs font-medium rounded-full text-white px-8 py-3 cursor-pointer'>
               continue reading...
             </span>
           </Link>
 
         </div>
+
+        </div>
+        </div>
+
         
     </div>
   )
