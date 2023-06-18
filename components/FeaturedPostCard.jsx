@@ -17,7 +17,7 @@ const FeaturedPostCard = ({ post }) => (
         />
         </div>
 
-        <p className="mb-4 text-shadow featured-card-p text-center">{post.title}</p> 
+        <p className="mb-4 text-shadow featured-card-p cursor-pointer hover:text-pink-600 text-center">{post.title}</p> 
         <p className="text-center mb-4 text-shadow font-semibold text-xs">{moment(post.createdAt).format('MMM DD, YYYY')}</p>
         <Link href={`/post/${post.slug}`}><span className="cursor-pointer absolute w-full h-full" /></Link> 
     </a>
